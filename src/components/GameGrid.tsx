@@ -1,0 +1,48 @@
+import React from "react";
+import { gameGridType } from "../types/gameTypes";
+import "./gamegrid.css";
+import Robot from "./Robot";
+
+const GameGrid: React.FC<gameGridType> = ({
+  gridSize,
+  robotPosition,
+  robotDirection,
+}) => {
+  // Generate the tabletop grid
+  const renderGrid = () => {
+    const grid = [];
+    for (let y = 0; y < gridSize; y++) {
+      const row = [];
+      for (let x = 0; x < gridSize; x++) {
+        row.push({ x, y });
+      }
+      grid.push(row);
+    }
+    return grid;
+  };
+
+  return (
+    <div
+      className="grid_wrapper"
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${gridSize}, 50px)`,
+        gridTemplateRows: `repeat(${gridSize}, 50px)`,
+      }}
+    >
+      {renderGrid().map((row, rowIndex) => (
+        <React.Fragment key={rowIndex}>
+          {row.map(({ x, y }) => (
+            <div className="single_cell" id={`${x}-${y}`} key={`${x}-${y}`}>
+              {robotPosition.x === x && robotPosition.y === y && (
+                <Robot direction={robotDirection} />
+              )}
+            </div>
+          ))}
+        </React.Fragment>
+      ))}
+    </div>
+  );
+};
+
+export default GameGrid;

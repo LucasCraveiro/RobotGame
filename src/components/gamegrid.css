@@ -1,0 +1,12 @@
+.grid_wrapper {
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+.single_cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
