@@ -4,3 +4,15 @@
   padding: 2rem;
   text-align: center;
 }
+
+.buttons_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.buttons_wrapper button svg {
+  width: 2rem;
+  height: 2rem;
+}
