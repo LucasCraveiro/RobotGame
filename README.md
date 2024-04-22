@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# Robot Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a game where you can chasing your Target with a Robot.
 
-Currently, two official plugins are available:
+## Rules
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Get as many Targets as you can in 60 seconds.
+- If you go over the Game Grid you are out.
 
-## Expanding the ESLint configuration
+### Instalation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```npm install```</br>
+</br>
+```npm run dev```</br>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Have fun
+<img width="618" alt="Screenshot 2024-04-22 at 8 52 20 AM" src="https://github.com/LucasCraveiro/RobotGame/assets/32401792/32044385-caee-47a3-a1e8-bae848c3ee3c">
+</br>
+<img width="297" alt="Screenshot 2024-04-22 at 8 53 12 AM" src="https://github.com/LucasCraveiro/RobotGame/assets/32401792/cf281dfb-8e6a-4aa7-bb4f-857f640191ab">
