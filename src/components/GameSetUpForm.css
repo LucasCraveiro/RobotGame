@@ -1,0 +1,35 @@
+.gameSetup_wrapper {
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.name_heading {
+  margin-top: 0;
+}
+
+.username_input {
+  padding: 10px;
+}
+
+.target_wrapper,
+.robot_wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.target_wrapper img,
+.robot_wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.start_game {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}

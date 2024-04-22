@@ -1,12 +1,14 @@
 import { scoresType } from "../types/gameTypes";
-import "./leaderBoard.css";
+import "./LeaderBoard.css";
 
 const LeaderBoard: React.FC<scoresType> = ({ scores }) => {
+  const scoreList = Array.isArray(scores) ? scores : [];
+
   return (
     <div>
       <h2>Leaderboard</h2>
-      {scores.length === 0 && <p>No scores yet</p>}
-      {scores.length !== 0 && (
+      {scoreList.length === 0 && <p>No scores yet</p>}
+      {scoreList.length !== 0 && (
         <table className="leaderboard_table">
           <thead>
             <tr>
@@ -15,7 +17,7 @@ const LeaderBoard: React.FC<scoresType> = ({ scores }) => {
             </tr>
           </thead>
           <tbody>
-            {scores.map((score, index) => (
+            {scoreList.map((score, index) => (
               <tr key={index}>
                 <td>{score.user}</td>
                 <td>{score.score}</td>

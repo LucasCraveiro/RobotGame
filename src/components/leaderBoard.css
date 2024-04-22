@@ -1,3 +1,19 @@
 .leaderboard_table {
   border: 1px solid black;
+  border-radius: 5px;
+  border-collapse: collapse;
+  min-width: 170px;
+}
+
+.leaderboard_table thead {
+  background-color: rgb(192, 186, 186);
+}
+
+.leaderboard_table thead tr th {
+  font-weight: 600;
+}
+
+.leaderboard_table th,
+.leaderboard_table td {
+  border: 1px solid black;
 }

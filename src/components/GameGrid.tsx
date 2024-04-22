@@ -9,6 +9,8 @@ const GameGrid: React.FC<gameGridType> = ({
   robotPosition,
   robotDirection,
   targetPosition,
+  robotImg,
+  targetImg,
 }) => {
   const renderGrid = () => {
     const grid = [];
@@ -36,10 +38,10 @@ const GameGrid: React.FC<gameGridType> = ({
           {row.map(({ x, y }) => (
             <div className="single_cell" id={`${x}-${y}`} key={`${x}-${y}`}>
               {robotPosition.x === x && robotPosition.y === y && (
-                <Robot direction={robotDirection} img="robot_3" />
+                <Robot direction={robotDirection} img={robotImg} />
               )}
               {targetPosition.x === x && targetPosition.y === y && (
-                <Target img="star" />
+                <Target img={targetImg} />
               )}
             </div>
           ))}

@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.main_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  min-height: 300px;
+}
+
 .buttons_wrapper {
   display: flex;
   justify-content: center;
